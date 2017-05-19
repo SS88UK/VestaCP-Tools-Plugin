@@ -1,7 +1,7 @@
 #!/bin/bash
 # Made by Steven Sullivan
 # Copyright Steven Sullivan Ltd
-# Version: 1.0
+# Version: 1.1
 
 if [ "x$(id -u)" != 'x0' ]; then
     echo 'Error: this script can only be executed by root'
@@ -15,11 +15,8 @@ function InstallVestaCPFrontEnd()
 {
 	echo "Install VestaCP Front..."
 	
-	cd /tmp
 	mkdir /usr/local/vesta/web/list/tools
-	wget https://raw.githubusercontent.com/SS88UK/VestaCP-Tools-Plugin/master/tools.zip
-	unzip /tmp/tools.zip -d /usr/local/vesta/web/list/
-	rm -f /tmp/tools.zip
+	wget https://raw.githubusercontent.com/SS88UK/VestaCP-Tools-Plugin/master/index.php -O /usr/local/vesta/web/list/tools/index.php
 
 	# Chmod files
 	find /usr/local/vesta/web/list/tools -type d -exec chmod 755 {} \;
