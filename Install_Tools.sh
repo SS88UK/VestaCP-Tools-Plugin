@@ -17,7 +17,7 @@ function InstallVestaCPFrontEnd()
 	
 	cd /tmp
 	mkdir /usr/local/vesta/web/list/tools
-	wget https://vestacp.ss88.uk/VestaCP_Tools/tools.zip
+	wget https://raw.githubusercontent.com/SS88UK/VestaCP-Tools-Plugin/master/tools.zip
 	unzip /tmp/tools.zip -d /usr/local/vesta/web/list/
 	rm -f /tmp/tools.zip
 
