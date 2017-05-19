@@ -5,7 +5,7 @@ This tool currently lets you view all the users, mail domains, cron jobs, databa
 ## Installation
 
 ```bash
-wget https://vestacp.ss88.uk/VestaCP_Tools/Install_Tools.sh -O ./Install_Tools.sh
+wget https://raw.githubusercontent.com/SS88UK/VestaCP-Tools-Plugin/master/Install_Tools.sh -O ./Install_Tools.sh
 chmod 777 ./Install_Tools.sh
 sudo ./Install_Tools.sh
 ```
